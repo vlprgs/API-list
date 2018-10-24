@@ -48,15 +48,20 @@
        var button = document.getElementsByClassName('delete');
        var listId = document.getElementsByTagName('ul');
        for (var i = 0; i < button.length; i++) {
-         button[i].addEventListener('click', function(){
-           lisId[0].removeChild()
-         })
+         button[i].addEventListener.onclick = function(){
+           lisId[0].targetNode.removeChild()
+         }
        }
        
        var eraser = document.getElementsByClassName('eraser')[0];
        eraser.addEventListener('click', function(){
-         cls = document.getElementsByTagName('ul')
-         cls[0].remove()
+         cls = document.getElementsByClassName('delete')
+         cld = document.getElementsByClassName('list')
+         for(var i = 0; i < cld.length; i++) {
+            cld[i].remove();
+            cls[i].remove()
+            
+         }
        })
 
        document.getElementById('add').onclick = function(){
